@@ -1,0 +1,16 @@
+name: "Ejercicio 1"
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir nombre
+        run: echo "Hola, mi nombre es German Chinchilla"
+
+      - name: Fecha y hora actual
+        run: date
+
+      - name: Sistema operativo
+        run: echo "Sistema operativo del runner: $RUNNER_OS"
